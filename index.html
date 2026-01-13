@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> 🌍 Live Location finder </title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <div class="header">
+      <h2>🌍 Location Tracker</h2>
+      <p>Get your current coordinates and address</p>
+    </div>
+
+    <button id="findMe" onclick="getUserLocation()">Detect My Location</button>
+
+    <div id="info-panel" class="hidden">
+      <div class="stat-grid">
+        <div class="stat-box">
+          <small>Latitude</small>
+          <div id="lat">--</div>
+        </div>
+        <div class="stat-box">
+          <small>Longitude</small>
+          <div id="lon">--</div>
+        </div>
+      </div>
+
+      <div class="address-box">
+        <p><strong>Street:</strong> <span id="street">...</span></p>
+        <p><strong>Full Address:</strong> <span id="address">...</span></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
